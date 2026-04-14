@@ -1,0 +1,113 @@
+=========================================================
+HEALTHCARE DATA ANALYTICS PROJECT
+Execution Instructions
+=========================================================
+
+1. PROJECT OVERVIEW
+
+This project performs healthcare data analysis using SQL.
+It includes:
+- Structured datasets (CSV files)
+- Database schema (schema.sql)
+- Business-oriented SQL queries (medical_data_analysis.sql)
+
+The queries are organized into:
+- Database Exploration
+- Data Cleaning
+- Business Analysis
+- Advanced Analysis
+
+
+---------------------------------------------------------
+2. PREREQUISITES
+---------------------------------------------------------
+
+Ensure you have:
+
+- MySQL Server (8.0 or above)
+- MySQL Workbench (or any SQL client)
+
+Basic SQL knowledge is helpful.
+
+
+---------------------------------------------------------
+3. STEP-BY-STEP EXECUTION
+---------------------------------------------------------
+
+STEP 1 — Create Database
+
+Open MySQL Workbench and run:
+
+CREATE DATABASE healthcare_db;
+USE healthcare_db;
+
+
+---------------------------------------------------------
+
+STEP 2 — Execute schema.sql
+
+- Open file: sql/schema.sql
+- Click Execute (⚡)
+
+This will:
+- Create all tables
+- Define relationships (primary & foreign keys)
+
+
+---------------------------------------------------------
+
+STEP 3 — Import CSV Datasets
+
+Datasets are located in the "datasets" folder:
+
+- patients.csv
+- admissions.csv
+- doctors.csv
+- province_names.csv
+
+Import using MySQL Workbench:
+
+1. Right-click on a table
+2. Select "Table Data Import Wizard"
+3. Choose corresponding CSV file
+4. Complete import
+
+Repeat for all tables.
+
+
+---------------------------------------------------------
+
+STEP 4 — Execute SQL Analysis File
+
+- Open file: sql/medical_data_analysis.sql
+- Run queries section by section
+
+This will generate:
+- Patient insights
+- Admission trends
+- Diagnosis analysis
+- Data transformations
+
+
+---------------------------------------------------------
+
+STEP 5 — Review Outputs
+
+- Observe results in MySQL Workbench
+- (Optional) Save outputs/screenshots for analysis
+
+
+---------------------------------------------------------
+4. IMPORTANT NOTES
+---------------------------------------------------------
+
+- GitHub cannot execute SQL files.
+- All queries must be run locally in MySQL.
+- Ensure table structure matches CSV format.
+- Run schema.sql BEFORE importing data.
+- Import data BEFORE executing analysis queries.
+
+
+---------------------------------------------------------
+END OF DOCUMENT
+---------------------------------------------------------
